@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Distribute setup script for the Natural Language Toolkit
+# Setup script for the Natural Language Toolkit
 #
 # Copyright (C) 2001-2012 NLTK Project
 # Author: Steven Bird <sb@csse.unimelb.edu.au>
@@ -18,9 +18,6 @@ import os
 version_file = os.path.join(os.path.dirname(__file__), 'nltk', 'VERSION')
 with open(version_file) as fh:
     nltk_version = fh.read().strip()
-
-import distribute_setup
-distribute_setup.use_setuptools()
 
 from setuptools import setup, find_packages
 
